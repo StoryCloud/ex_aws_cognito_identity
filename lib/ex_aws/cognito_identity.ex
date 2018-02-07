@@ -1,7 +1,7 @@
 defmodule ExAws.CognitoIdentity do
   import ExAws.Utils, only: [camelize_keys: 1]
 
-  @namespace "com.amazonaws.cognito.identity.model.AWSCognitoIdentityService"
+  @namespace "AWSCognitoIdentityService"
 
   def get_open_id_token_for_developer_identity(identity_pool_id, logins, token_duration, opts \\ []) do
     data = opts
